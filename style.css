@@ -1,6 +1,6 @@
 body{
 	font-family:"Algerian",serif ;
-	background-color: lightblue;
+	background-color:lightblue;
 	font-size: 1.2rem;
 	
 }
@@ -10,8 +10,8 @@ h1{
 	background-color:green;
 	color: yellow;
 	padding: auto;
-	overflow: scroll;
-    
+	overflow:scroll;
+
 }
 img{
 	width: 100%;
@@ -71,9 +71,11 @@ th{
 form{
 	padding:20px;
 	margin:10px auto;
-	color:gray;
-	right:50%;
-	left: 50%;
+	color:black;
+	border-left: 5px solid black;
+	border-right: 5px solid black;
+	border-top:5px solid black;
+	border-bottom: 5px solid black;
 }
 
 button{
@@ -84,3 +86,32 @@ button{
 	 width:100%;
 	 max-width:300px;
 }
+
+select{
+	width:100%;
+	max-width:300px;
+	padding:10px 12px;
+	margin: auto;
+	font-size: 20px;
+	color:blue;
+}
+/* @media(max-width:600px){
+	.h2{
+		font-size: 14px;
+		transform: rotate(0deg);
+	}
+	
+}
+@media(min-width:601px){
+	.h2{
+		font-size: 16px;
+		transform: rotate(2deg);
+	}
+	
+}
+@media(max-width:1025px){
+	.h2{
+		font-size: 18px;
+		transform: rotate(5deg);
+		text-decoration: ;
+	}*/
