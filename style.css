@@ -16,20 +16,38 @@ h1{
 img{
 	width: 100%;
 	height:auto;
+	display: block;
 	max-width: 2000px;
 
 	
 }
+#nav{
+	padding:10px;
+
+}
 #nav a{
 	border:2px solid transparent;
-	background-color:gray;
-	display:inline-block;
-	text-decoration: none;
-	padding:5px 10px;
-	margin-right:20px ;
-	text-decoration: ;
-	color: navy;
+	background-color:green;
+	display:block;
+	text-decoration: 5px solid transparent;
+	padding:10px 15px;
+	color: white;
+	transition: background 0.3s;
 
+}
+#nav ul{
+	list-style:none;
+	background-color:green;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	text-decoration:none ;
+
+}
+#nav a:hover{
+	background-color:red;
 }
 
 .body{
@@ -80,7 +98,9 @@ form{
 	border-right: 5px solid black;
 	border-top:5px solid black;
 	border-bottom: 5px solid black;
+	background-color:white;
 }
+
 
 button{
 	padding: 14px 30px;
@@ -99,25 +119,48 @@ select{
 	font-size: 20px;
 	color:blue;
 }
+select:hover{
+	background-color:green;
+}
 @media(max-width:600px){
-	.img{
-		font-size: 14px;
-		transform: rotate(0deg);
+	.nav-ul {
+         flex-direction: column;
+         align-items:center;
 	}
 	
-}
-@media(min-width:601px){
-	.img{
-		font-size: 16px;
-		transform: rotate(2deg);
+	.nav-ul li {
+		margin: 10px 0;	}
+		.nav-ul li{
+			width: 100%;
+			text-align: center;
+		}
 	}
 	
-}
-@media(max-width:1025px){
-	.img{
-		font-size: 18px;
-		transform: rotate(5deg);
-		text-decoration: ;
+	@media(max-width:1025px){
+	.nav{
+		flex-direction: column;
+         align-items:center;}
+
+       .nav-ul li {
+		margin: 10px 0;	}  
 	}
-	
+	@media(max-width:768px){
+		#nav ul{
+			flex-direction: column;
+			align-items: center;}
+			#nav ul li{
+				width: 100%;
+				border-top: 1px solid rgba(255,255,255,0.2);
+			}
+		}
+
+#end p{
+	bottom: 675px;
+	left: 50%;
+	border-radius: 10px;
+	padding: 10px 20px;
+	z-index: 1000;
+	position: fixed;
+	background-color:black;
+	color: white;
 }
