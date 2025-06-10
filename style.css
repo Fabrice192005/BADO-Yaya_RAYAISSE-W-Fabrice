@@ -76,11 +76,20 @@ img{
 	}
 	
 }
-.tofs{
+#tofs{
 		display:flex;
 		flex-wrap:wrap;
 		height:auto;
+		justify-content:center;
+		gap:10px;
 
+	}
+	#tofs img{
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		object-fit: cover;
+		display: block;
 	}
 @media screen and (max-width:600px){
 	.tofs img{
