@@ -122,6 +122,15 @@ select{
 select:hover{
 	background-color:green;
 }
+#annuler input{
+	width:100%;
+	max-width:300px;
+	color:white;
+	font-size: 18px;
+	background-color: red;
+	padding:14px 30px;
+}
+
 @media(max-width:600px){
 	.nav-ul {
          flex-direction: column;
