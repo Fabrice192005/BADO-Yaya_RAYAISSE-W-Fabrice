@@ -76,6 +76,17 @@ img{
 	}
 	
 }
+.tofs{
+		display:flex;
+		flex-wrap:wrap;
+		height:auto;
+
+	}
+@media screen and (max-width:600px){
+	.tofs img{
+		flex:  1 1 100%;
+	}
+}
 table{
 	text-align: center;
 	border: 2px solid black;
