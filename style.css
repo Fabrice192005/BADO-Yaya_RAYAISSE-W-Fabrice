@@ -172,13 +172,26 @@ select:hover{
 		margin: 10px 0;	}  
 	}
 	@media(max-width:768px){
+		.guingette img{
+			flex: 1 1 45%;
+			max-width: 100%;
+		}
+		.sya img{
+			flex: 1 1 45%;
+			max-width: 100%;
+		}
+		.mosquee img{
+			flex: 1 1 45%;
+			max-width: 100%;
+		}
 		#nav ul{
 			flex-direction: column;
 			align-items: center;}
 			#nav ul li{
 				width: 100%;
 				border-top: 1px solid rgba(255,255,255,0.2);
-			}
+		
+	    	}
 		}
 
 #end p{
