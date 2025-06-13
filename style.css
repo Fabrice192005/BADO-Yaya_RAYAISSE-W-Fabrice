@@ -196,7 +196,6 @@ select:hover{
 
 #end p{
 	text-align: center;
-	border-radius: 10px;
 	padding: 10px 0;
 	background-color:black;
 	color: white;
@@ -205,5 +204,17 @@ select:hover{
 	.guingette img{
 width: 100%;}
 	
+}
+#devise img{
+	width:100%;
+	height:60px;
+	animation: pulse 1.2s ease-in-out infinite;
+}
+@keyframes pulse {
+	0%,100%{
+		transform: scale(1);
+	}
+	50%{
+	transform: scale(1.1);}
 }
 
