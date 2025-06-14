@@ -140,6 +140,18 @@ select{
 select:hover{
 	background-color:green;
 }
+
+#pay{
+	color:yellow;
+}
+#guingette p{
+	width:100%;
+	background-color:gold;
+	text-align: center;
+	color:blue;
+	border-radius:50px;
+}
+
 #annuler input{
 	width:100%;
 	max-width:300px;
