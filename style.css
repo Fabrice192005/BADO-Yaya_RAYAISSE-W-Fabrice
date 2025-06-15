@@ -80,34 +80,7 @@ img{
 	
 }
 
-table{
-	text-align: center;
-	border: 2px solid black;
-	width:100%;
-	height: auto;
-}
-td{
-	border: 2px solid black;
-	text-align: center;
-}
-td a{
-	text-decoration: none;
-	color:blue;
-	background-color:green;
-	border-radius:10px;
-	width: 50%;
-	text-align: center;
-	display: inline;
-	padding: 10px 20px;
-	font-weight: bold;
-}
-td a:hover{
-	background-color:yellow;
-}
-th{
-	border: 2px solid black;
-	text-align: center;
-}
+
 form{
 	padding:20px;
 	margin:10px auto;
@@ -127,6 +100,7 @@ button{
 	 background-color:green;
 	 width:100%;
 	 max-width:300px;
+	 cursor:pointer;
 }
 
 select{
@@ -136,6 +110,7 @@ select{
 	margin: auto;
 	font-size: 20px;
 	color:blue;
+	cursor:pointer;
 }
 select:hover{
 	background-color:green;
@@ -160,7 +135,42 @@ select:hover{
 	font-size: 18px;
 	background-color: red;
 	padding:14px 30px;
+	cursor:grab;
 }
+
+.patri{
+	background-color: red;
+	border-left: 3px solid green;
+	border-radius:10px;
+	padding:20px;
+	margin-bottom:30px;
+	text-align: center;
+	box-shadow: 1px 4px 10px;
+}
+.titre{
+	font-size: 2rem;
+	font-weight:bold;
+	color:yellow;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.patri img{
+	width:100%;
+	border-radius:8px;
+	border:20px solid green;
+	transition: transform 0.5s ease;
+}
+.patri img:hover{
+	transform: scale(1);
+	cursor:grab;
+}
+@media (min-width:600px){
+	.patri{
+		width:80%;
+		margin: 20px auto;
+	}
+}
+
 
 @media(max-width:600px){
 	.nav-ul {
@@ -230,3 +240,13 @@ width: 100%;}
 	transform: scale(1.1);}
 }
 
+#ac img{
+	width:100%;
+	height:auto;
+	animation: float 2.5s ease-in-out infinite;
+}
+@keyframes float {
+	0%{transform: translateY(0);}
+	50%{transform: translateY(-50px);}
+	100%{transform: translateY(0);}
+	}
